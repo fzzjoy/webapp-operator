@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: webapp-operator
 repo: webapp-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kubebuilder.io
+  group: app
+  kind: EasyService
+  path: webapp-operator/api/v1
+  version: v1
 version: "3"
